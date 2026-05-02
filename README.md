@@ -1,4 +1,4 @@
-<img width="373" height="840" alt="image" src="https://github.com/user-attachments/assets/507868c7-0235-44c3-821d-4572ae6b2ee6" /><img width="373" height="840" alt="image" src="https://github.com/user-attachments/assets/35712138-aa7c-483e-bcf7-014d4c2ff459" />
+<img width="373" height="840" alt="image" src="https://github.com/user-attachments/assets/507868c7-0235-44c3-821d-4572ae6b2ee6" />
 
 # Трекер памяти
 
