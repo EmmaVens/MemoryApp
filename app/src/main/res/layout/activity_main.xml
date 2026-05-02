@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEF4FF"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="22dp"
+        android:paddingRight="22dp"
+        android:paddingTop="40dp"
+        android:paddingBottom="80dp">
+
+        <!-- Заголовок -->
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Трекер памяти"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:textColor="#0F172A"
+            android:gravity="center"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Когнитивный тест для проверки кратковременной памяти"
+            android:textSize="16sp"
+            android:textColor="#475569"
+            android:gravity="center"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Основная карточка -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FFFFFF"
+            android:padding="22dp"
+            android:elevation="10dp"
+            android:layout_marginBottom="22dp">
+
+            <TextView
+                android:id="@+id/timerText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Время: 0"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#2563EB"
+                android:background="#DBEAFE"
+                android:paddingLeft="18dp"
+                android:paddingRight="18dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="18dp" />
+
+            <TextView
+                android:id="@+id/wordsText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Нажмите «Начать тест»"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#111827"
+                android:gravity="center"
+                android:background="#EFF6FF"
+                android:padding="22dp"
+                android:layout_marginBottom="18dp" />
+
+            <Button
+                android:id="@+id/startButton"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:text="Начать тест"
+                android:textAllCaps="false"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#2563EB"
+                android:layout_marginBottom="18dp" />
+
+            <EditText
+                android:id="@+id/inputWords"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:hint="Введите запомненные слова через пробел"
+                android:textColor="#111827"
+                android:textColorHint="#94A3B8"
+                android:textSize="16sp"
+                android:gravity="top"
+                android:background="#F8FAFC"
+                android:padding="16dp"
+                android:enabled="false"
+                android:layout_marginBottom="14dp" />
+
+            <Button
+                android:id="@+id/checkButton"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:text="Проверить результат"
+                android:textAllCaps="false"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#10B981"
+                android:enabled="false"
+                android:layout_marginBottom="18dp" />
+
+            <TextView
+                android:id="@+id/resultText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Результат появится здесь"
+                android:textSize="17sp"
+                android:textColor="#065F46"
+                android:background="#D1FAE5"
+                android:padding="18dp" />
+
+        </LinearLayout>
+
+        <!-- Карточка истории -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FFFFFF"
+            android:padding="22dp"
+            android:elevation="10dp">
+
+            <TextView
+                android:id="@+id/historyTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="История результатов"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#111827"
+                android:layout_marginBottom="12dp" />
+
+            <TextView
+                android:id="@+id/historyText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="История пока пустая"
+                android:textSize="15sp"
+                android:textColor="#374151"
+                android:lineSpacingExtra="5dp"
+                android:background="#F9FAFB"
+                android:padding="16dp"
+                android:layout_marginBottom="16dp" />
+
+            <Button
+                android:id="@+id/clearHistoryButton"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:text="Очистить историю"
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#EF4444" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
